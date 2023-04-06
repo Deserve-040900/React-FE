@@ -1,8 +1,13 @@
 import React from "react";
+import Preload from "./elements/Preload";
 
 const Body = () => {
     return (
-        <h1>Testing Body</h1>
+        <>
+            <body data-spy="scroll" class="">
+                {/* <Preload /> */}
+            </body>
+        </>
     )
 }
 

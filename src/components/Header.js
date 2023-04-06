@@ -1,9 +1,9 @@
 import React from "react";
-import Config from "./pages/Config";
+import Navbar from "./elements/Navbar";
 
 const Header = () => {
     return (
-        <Config />
+        <Navbar />
     )
 }
 

@@ -10,7 +10,7 @@ const App = () => {
 
       <Body />
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }
