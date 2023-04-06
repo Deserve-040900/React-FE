@@ -76,3 +76,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 cd <name-app>
 `npm run`
 `npm install react react-dom react-scripts`
+
+npm install --save-dev @fortawesome/fontawesome-free
+npm i react-router-dom

@@ -1,17 +1,30 @@
 import React from "react"
-import Header from './components/Header'
-import Body from "./components/Body"
-import Footer from "./components/Footer"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./components/views/Home";
+import Books from "./components/views/Books";
+import Login from "./components/views/Login";
+import Detail from "./components/views/Detail";
+import Shopping from "./components/views/Shopping";
+import NoPage from "./components/views/404";
+import Signup from "./components/views/Signup";
+import Comics from "./components/views/Comics";
 
 const App = () => {
   return (
-    <div>
-      <Header />
-
-      <Body />
-
-      {/* <Footer /> */}
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />}>
+          {/* <Route index element={<Home />} /> */}
+          <Route path="books" element={<Books />} />
+          <Route path="login" element={<Login />} />
+          <Route path="detail" element={<Detail />} />
+          <Route path="cart" element={<Shopping />} />
+          <Route path="signup" element={<Signup />} />
+          <Route path="comics" element={<Comics />} />
+          <Route path="404" element={<NoPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 

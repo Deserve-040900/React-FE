@@ -1,12 +1,14 @@
 import React from "react";
 import Preload from "./elements/Preload";
+import Banner from "./elements/Banner";
 
 const Body = () => {
     return (
         <>
-            <body data-spy="scroll" class="">
+            <div data-spy="scroll" class="">
                 {/* <Preload /> */}
-            </body>
+                <Banner />
+            </div>
         </>
     )
 }

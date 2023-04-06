@@ -1,10 +1,10 @@
 import React from "react";
-import "../assets/css/style.css";
+// import "../assets/css/style.css";
 
 const Footer = () => {
   return (
     <>
-      <footer>
+      <footer className="sticky">
         <div class="container">
             <p>askdnfka jdfjaasdfajkdbfaskdjb sjakidjklsljdaknjd akdjsfnakjdfn</p>
           <hr />
