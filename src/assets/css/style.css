@@ -27,11 +27,9 @@
 /*
   1.0 - Normalize
  */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
 }
 html {
     font-family: 'Lato', sans-serif;
@@ -577,31 +575,6 @@ body.top_padding{
 
 /*	03	- Section Header
 ----------------------------------------------*/
-.section_header{
-    text-align: center;
-    max-width: 500px;
-    margin: 0 auto;
-}
-.section_header h2{
-    text-transform: uppercase;
-	position: relative;
-	margin-bottom: 30px;
-}
-.section_header h2:before{
-	content: "";
-    position: absolute;
-    bottom: 0;
-    height: 4px;
-    width: 80px;
-    background-color: #0d1218;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.section_header p{
-    font-size: 18px;
-    line-height: 28px;
-    color: #979797;
-}
 .padding_140{
     padding: 140px 0px;
 }
@@ -859,14 +832,14 @@ body.top_padding{
 
 /*	07	- About Section
 ----------------------------------------------*/
-.about .section_header{
+.about .about_text{
     margin: 0;
     text-align: left;
 }
-.about .section_header h2{
+.about .about_text h2{
     color: #009bde;
 }
-.about .section_header h2:before{
+.about .about_text h2:before{
 	background-color: #009bde;
 	left: 40px;
 }
@@ -897,10 +870,7 @@ body.top_padding{
     color: #979797;
     margin-left: 15px;
 }
-.about .about_job{
-    margin-top: 94px;
-}
-.about .about_job h3{
+/* .about .about_job h3{
     line-height: 94px;
     font-weight: 900;
     text-transform: uppercase;
@@ -961,7 +931,7 @@ body.top_padding{
 }
 .about .about_job ul > li:hover p{
     color: #fff;
-}
+} */
 .about .about_skills h3{
     line-height: 84px;
     font-weight: 900;
@@ -1944,13 +1914,10 @@ body.top_padding{
 /*	16	- Footer
 ----------------------------------------------*/
 footer{
-    background-color: #23242a;
+    background-color: #0d1218;
     text-align: center;
     color: #fff;
-    padding: 55px 0px;
-}
-footer .container {
-    margin: 0 20px;
+    padding: 30px 0px;
 }
 footer p{
     font-size: 15px;

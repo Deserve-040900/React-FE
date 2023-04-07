@@ -1,15 +1,15 @@
 import React from "react";
 import { Outlet, Link } from "react-router-dom";
-import Logo from "../../assets/images/logo.png";
+import Root from "../../assets/images/root.png";
 
 const Navbar = () => {
   return (
     <>
       <div class="container-fluid">
         <div class="menu">
-          <a class="nav-brand" href="../views/Home.js">
-            <img src={Logo} alt={"logo.png"} />
-          </a>
+          <Link to="/" class="nav-brand">
+            <img src={Root} alt={"root.png"} />
+          </Link>
 
           <ul class="nav" id="menu">
             <li class="nav-item">
@@ -23,14 +23,14 @@ const Navbar = () => {
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../views/Comics.js">
+              <Link to="/comics" class="nav-link">
                 Comics
-              </a>
+              </Link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../views/Books.js">
+              <Link to="/books" class="nav-link">
                 Books
-              </a>
+              </Link>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">
@@ -45,14 +45,14 @@ const Navbar = () => {
               <ion-icon name="search-outline"></ion-icon>
             </div>
             <li class="nav-item">
-              <a class="nav-link" href="../views/Login.js">
+              <Link to="/login" class="nav-link">
                 <ion-icon name="person-circle-outline"></ion-icon>Login/Signup
-              </a>
+              </Link>
             </li>
-            <li class="nav-item" href="../views/Shopping.js">
-              <a class="nav-link">
+            <li class="nav-item">
+              <Link to="/cart" class="nav-link">
                 <ion-icon name="cart-outline"></ion-icon>Shopping Cart
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

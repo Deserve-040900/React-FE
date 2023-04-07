@@ -1,12 +1,14 @@
 import React from "react";
-// import "../assets/css/style.css";
+import Social from "./elements/Social"
+import GridFooter from "./elements/GridFooter";
 
 const Footer = () => {
   return (
     <>
-      <footer className="sticky">
+      <footer>
         <div class="container">
-            <p>askdnfka jdfjaasdfajkdbfaskdjb sjakidjklsljdaknjd akdjsfnakjdfn</p>
+            <Social />
+            <GridFooter />
           <hr />
           <p>
             &#169; copyright{" "}

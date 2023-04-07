@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const Banner1 = () => {
   return (
@@ -13,7 +13,7 @@ const Banner1 = () => {
         <div class="item"><img src="../../assets/images/slideshow/portfolio-7.jpg" alt="slide7" /></div>
       </div>      
     </div>
-  )
-}
+  );
+};
 
-export default Banner1
+export default Banner1;

@@ -8,13 +8,14 @@ import Shopping from "./components/views/Shopping";
 import NoPage from "./components/views/404";
 import Signup from "./components/views/Signup";
 import Comics from "./components/views/Comics";
+import Body from "./components/Body";
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />}>
-          {/* <Route index element={<Home />} /> */}
+          <Route index element={<Body />} />
           <Route path="books" element={<Books />} />
           <Route path="login" element={<Login />} />
           <Route path="detail" element={<Detail />} />
