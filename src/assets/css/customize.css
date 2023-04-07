@@ -106,7 +106,7 @@ ul#bar li:hover > a, a:hover > ion-icon {
     min-height: 100vh;
     background-color: #28292d;
 }
-h1 {
+.container-fluid#about h1 {
     margin-top: 30px;
     color: #4ad5ff;
 }
@@ -151,7 +151,7 @@ h1 {
     color: #fff;
     margin-bottom: 30px;
 }
-.about_page ul > li {
+.about_page ul > #style > li {
     list-style: none;
     display: inline-block;
     text-align: center;
@@ -170,10 +170,10 @@ h1 {
     transition: .5s;
 }
 .about_page ul:last-child { margin: 0; }
-.about_page ul > li > i {
+.about_page ul > #style > li > i {
     color: #4ad5ff;
 }
-.about_page ul > li > i::before {
+.about_page ul > #style > li > i::before {
     display: block;
     font-size: 48px;
     margin: 0;
@@ -183,7 +183,7 @@ h1 {
     -o-transition: .5s;
     transition: .5s;
 }
-.about_page ul > li > p {
+.about_page ul > #style > li > p {
     font-size: 18px;
     font-weight: 700;
     margin-top: 20px;
@@ -191,21 +191,144 @@ h1 {
     -webkit-transition: .5s;
     transition: .5s;
 }
-.about_page ul > li:hover {
+.about_page ul > #style > li:hover {
     background-color: #4ad5ff;
     color: #fff;
     border: 3px solid #fff;
 }
-.about_page ul > li:hover i,
-.about_page ul > li:hover p {
+.about_page ul > #style > li:hover i,
+.about_page ul > #style > li:hover p {
     color: #fff;
 }
-.about_page ul > li:hover i {
+.about_page ul > #style > li:hover i {
     color: #fff;
     -webkit-animation-name: gt_animation;
     -webkit-animation-duration: .8s;
     animation-name: gt_animation;
     animation-duration: .8s;
+}
+
+.container#contact {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container#contact h1 {
+    position: relative;
+    top: 0;
+    margin-bottom: 50px;
+    color: #4ad5ff;
+}
+.contact {
+    position: relative;
+    width: 80%;
+    height: 400px;
+    background: #1c1c1c;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.contact::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -30%;
+    width: 80%;
+    height: 600px;
+    background: linear-gradient(0deg,transparent,#45f9ff,#45f9ff);
+    animation: animate 6s linear infinite;
+    transform-origin: bottom right;
+}
+.contact::after {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -30%;
+    width: 80%;
+    height: 600px;
+    background: linear-gradient(0deg,transparent,#45f9ff,#45f9ff);
+    animation: animate 6s linear infinite;
+    transform-origin: bottom right;
+    animation-delay: -3s;
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+.contact .form {
+    position: absolute;
+    inset: 2px;
+    border-radius: 10px;
+    background: #28292d;
+    z-index: 10;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+}
+.contact .inp {
+    position: relative;
+    width: 100%;
+    margin-top: 25px;
+    /* border: 1px solid #ff0000; */
+}
+.contact .inp .form-label {
+    position: absolute;
+    left: 20px;
+    top: -15px;
+    color: #4ad5ff; /*#*/
+    /* border: 1px solid #ff0000; */
+    background-color: #28292d;
+    padding: 5px;
+    font-size: 0.8em;
+    pointer-events: none;
+    letter-spacing: 0.05em;
+    /* transition: 0.5s; */
+}
+.contact .inp input,
+.contact .inp textarea {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid #4ad5ff;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    z-index: -1;
+}
+.contact .inp ::-webkit-input-placeholder{
+    color: #898989;
+}
+::-moz-input-placeholder{
+    color: #898989;
+}
+.contact .inp .btn-send {
+    padding: 15px 28px;
+    margin: 10px 0 0 20px;
+    width: 100px;
+    background-color: #4ad5ff;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.contact .inp .btn-send:hover {
+    transform: scale(1.09);
+    color: #4ad5ff;
+    background-color: transparent;
+    border: 1px #4ad5ff solid;
 }
 /* Carousel */
 .img-style {
@@ -587,4 +710,188 @@ ul {
     color: #45f9ff;
     background: transparent;
     border: 1px #45f9ff solid;
+}
+/* Shopping */
+.container#cart {
+    padding: 0;
+    box-sizing: border-box;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.cart-list {
+    position: relative;
+    width: 100%;
+    margin: 30px 0;
+    padding: 50px 0 30px 0;
+    background-color: #353535;
+}
+.cart-list .card {
+    margin: 20px auto;
+    background-color: #23242a;
+    color: #fff;
+    width: 90%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+.cart-list .card .imgCart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.cart-list .card ion-icon {
+    color: #fff;
+    font-size: 1.7em;
+    cursor: pointer;
+}
+.cart-list .card .img-fluid {
+    height: 150px;
+}
+.cart-list .card h6 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #fff;
+}
+.cart-list .card h6:hover {
+    color: #4ad5ff;
+}
+.cart-list .card span {
+    color: #979797;
+}
+.cart-list .card span ion-icon {
+    color: #979797;
+    font-size: 17px;
+}
+.cart-list .card select {
+    background-color: transparent;
+    color: #979797;
+}
+.total {
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+}
+.sale {
+    text-decoration: line-through;
+    margin: 20px 30px 0 0;
+}
+.price {
+    color: #979797;
+    margin: 20px 70px 0 0;
+}
+.btn_added {
+    opacity:1;
+    display:inline-block;
+    display:-ms-inline-flexbox;
+    display:inline-flex;
+    white-space:nowrap;
+    vertical-align:top;
+}
+.is-form {
+    overflow:hidden;
+    position:relative;
+    background-color:#f9f9f9;
+    height:1.9rem;
+    width:1.9rem;
+    padding:0;
+    text-shadow:1px 1px 1px #fff;
+    border:1px solid #ddd;
+}
+.is-form:focus,.input-text:focus {
+    outline:none;
+}
+.is-form.minus {
+    border-radius:4px 0 0 4px;
+}
+.is-form.plus {
+    border-radius:0 4px 4px 0;
+}
+.input-qty {
+    background-color:#fff;
+    height:1.9rem;
+    text-align:center;
+    font-size:1rem;
+    display:inline-block;
+    vertical-align:top;
+    margin:0;
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+    border-left:0;
+    border-right:0;
+    padding:0;
+}
+.input-qty::-webkit-outer-spin-button,
+.input-qty::-webkit-inner-spin-button {
+    -webkit-appearance:none;
+    margin:0;
+}
+.container#total {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.sticky {
+    position: fixed;
+    bottom: 0;
+    background-color: #28292d;
+    width: 90%;
+    height: 150px;
+    /* margin: 0 auto; */
+    /* padding: 10px; */
+    /* font-size: 20px; */
+}
+.totalPay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+.totalPay span {
+    color: #fff;
+    font-size: 20px;
+}
+.totalPay p {
+    color: #4ad5ff;
+    font-size: 18px;
+    margin: 20px 0;
+}
+.select-style {
+    /* border: 1px solid #fff; */
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 30px;
+    margin: 0;
+}
+.select-style ion-icon {
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 20px;
+    border: 1px solid #fff;
+}
+.select-style p {
+    color: #979797;
+    font-size: 1.2em;
+    margin-top: 30px;
+}
+.select-style a {
+    text-decoration: none;
+    color: #979797;
+    font-size: 1.2em;
+    margin: 30px auto;
+}
+.select-style .btn-buy {
+    letter-spacing: 5px;
+    padding: 20px 30px;
+    border-radius: 5px;
+    margin: 10px auto;
+}
+.select-style .btn-buy:hover {
+    color: #4ad5ff;
+    background-color: #23242a;
+    border: 2px solid #4ad5ff;
 }
