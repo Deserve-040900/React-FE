@@ -1,0 +1,14 @@
+{
+  "users": [
+    { "id": 1, "name": "Nguyen Van A", "email": "NVA@gmail.com", "phone": "0908246357", "pass": "123NVA" },
+    { "id": 1, "name": "Nguyen Thi B", "email": "NTB@gmail.com", "phone": "0908357246", "pass": "123NTB" },
+    { "id": 1, "name": "Tran Van C", "email": "TVC@gmail.com", "phone": "0908214712", "pass": "123TVC" }
+  ],
+  "posts": [
+    { "id": 1, "title": "json-server", "author": "typicode" }
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ],
+  "profile": { "name": "typicode" }
+}

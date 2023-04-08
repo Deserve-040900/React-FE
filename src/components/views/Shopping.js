@@ -11,7 +11,9 @@ const Shopping = () => {
             <div class="row">
               <div class="col-3 imgCart">
                 <ion-icon name="square-outline"></ion-icon>
-                <Link to={"/detail"}><img src={require("../../assets/images/book/book1.png")} class="img-fluid" alt="1.jpg" /></Link>
+                <Link to={"/detail"}>
+                  <img src={require("../../assets/images/book/book1.png")} class="img-fluid" alt="1.jpg" />
+                  </Link>
               </div>
               <div class="col-8">
                 <div class="row imgCart">

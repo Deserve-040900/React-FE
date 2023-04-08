@@ -42,7 +42,7 @@ const Layout = () => {
               <ul>
                 <Link to={"/cart"} id="style">
                 <li>
-                  <i class="fas fa-cart-plus"></i>
+                  <i class="fas fa-cart"></i>
                   <p>My Cart</p>
                 </li>
                 </Link>

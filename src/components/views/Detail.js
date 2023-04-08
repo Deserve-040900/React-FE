@@ -1,10 +1,11 @@
 import React from 'react'
+import Product from '../elements/Product'
 
 const Detail = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <Product />
+    </>
   )
 }
 

@@ -18,7 +18,6 @@ const GridFooter = () => {
 
         <div class="col-lg-3 col-md-6 col-B">
           <h5>Links</h5>
-
           <ul>
             <li>
               <a href="#navbarNav">

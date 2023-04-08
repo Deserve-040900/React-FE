@@ -79,3 +79,6 @@ cd <name-app>
 
 npm install --save-dev @fortawesome/fontawesome-free
 npm i react-router-dom
+
+npm install -g json-server
+npx json-server --watch -p 3333 database.json

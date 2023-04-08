@@ -13,14 +13,10 @@ const Navbar = () => {
 
           <ul class="nav" id="menu">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">
-                Home
-              </a>
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">
-                About
-              </a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
               <Link to="/comics" class="nav-link">
